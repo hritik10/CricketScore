@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
+
     int scoreTeamA = 0;
     int scoreTeamB = 0;
     int wicketsTeamA = 0;
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * @param score score of team A
-     * Displays the given score for Team A.
+     *              Displays the given score for Team A.
      */
 
     public void displayForTeamA(int score) {
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * @param wickets no. of wickets of team A
-     * displays the wickets of team A
+     *                displays the wickets of team A
      */
     public void wicketsForTeamA(int wickets) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_wickets);
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
     }
+
     /**
      * Increases team A score by 4
      */
@@ -87,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * @param score score of team B
-     *  Displays the given score for Team B.
+     *              Displays the given score for Team B.
      */
     public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
@@ -153,7 +155,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *
      * resets all the parameters to 0
      */
     public void resetScore(View v) {
